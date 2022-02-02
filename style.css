@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Popping', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,7 +30,7 @@ header {
 header a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -44,6 +45,10 @@ header #logo {
 }
 
 .parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url('images/stars.png');
     width: 100%;
     height: 100vh;
@@ -53,8 +58,36 @@ header #logo {
     background-size: cover;
 }
 
+.parallax h1.text {
+    color: #FFFFFF;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.parallax a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.parallax a:hover,
+.parallax a:active {
+    color: #551a8b;
+}
+
+.parallax a i {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
 .content {
-    padding: 100px;
+    padding: 50px 100px;
     text-align: justify;
     color: #FFFFFF;
     background: linear-gradient(to bottom, #00010D, #071126);
